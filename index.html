@@ -37,6 +37,19 @@
       color: #ffffff;
       font-weight: bold;
     }
+    nav a.button {
+      display: inline-block;
+      background: #6B3D8C;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a.button:hover {
+      background: #4B2D5C;
+    }
     .hero {
       background: #F5E6FF;
       text-align: center;
@@ -97,7 +110,7 @@
     .how-it-works h3 {
       font-size: 2rem;
       margin-bottom: 2rem;
-      color: #B590C3;
+      color: #6B3D8C;
     }
     .steps {
       display: flex;
@@ -112,11 +125,212 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+    .loan-types {
+      background-color: #F5E6FF;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .loan-types h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #6B3D8C;
+    }
+    .loan-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .loan-card {
+      background: #f9f9fb;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .loan-card:before {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .loan-card.personal:before {
+      content: "👤";
+    }
+    .loan-card.business:before {
+      content: "💼";
+    }
+    .loan-card.emergency:before {
+      content: "⚡";
+    }
+    .loan-card h4 {
+      color: #6B3D8C;
+      margin: 0 0 0.5rem 0;
+    }
+    .loan-card p {
+      margin: 0;
+      color: #666;
+    }
+    .benefits {
+      background-color: #ffffff;
+      padding: 3rem 2rem;
+    }
+    .benefits-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+    .benefits-list {
+      flex: 1;
+      text-align: left;
+    }
+    .benefits-list h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #6B3D8C;
+    }
+    .benefits-list ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .benefits-list li {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .benefits-list li:before {
+      content: "✓";
+      color: #6B3D8C;
+      font-weight: bold;
+    }
+    .benefits-list h4 {
+      color: #6B3D8C;
+      margin: 0 0 0.5rem 0;
+    }
+    .benefits-list p {
+      margin: 0;
+      color: #666;
+    }
+    .benefits-button {
+      flex: 0 0 auto;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #6B3D8C;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background: #4B2D5C;
+    }
+    .benefits .cta-button {
+      margin: 0;
+    }
+    .feedback {
+      background-color: #F5E6FF;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .feedback h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #6B3D8C;
+    }
+    .feedback-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .feedback-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 350px;
+      text-align: left;
+    }
+    .feedback-card p {
+      font-style: italic;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .feedback-card .author {
+      font-weight: bold;
+      color: #6B3D8C;
+    }
     footer {
       background: #B590C3;
       color: white;
       padding: 1rem;
       text-align: center;
+    }
+    .partners {
+      background-color: #ffffff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .partners h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #6B3D8C;
+    }
+    .partner-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .partner-card {
+      background: #f9f9fb;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .partner-card:before {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .partner-card.banks:before {
+      content: "🏦";
+    }
+    .partner-card.unions:before {
+      content: "🤝";
+    }
+    .partner-card.advisors:before {
+      content: "📊";
+    }
+    .partner-card h4 {
+      color: #6B3D8C;
+      margin: 0 0 0.5rem 0;
+    }
+    .partner-card p {
+      margin: 0;
+      color: #666;
     }
   </style>
 </head>
@@ -130,6 +344,7 @@
       <a href="index.html">Home</a>
       <a href="#info">Information</a>
       <a href="contacts.html">Contact</a>
+      <a href="form.html" class="button">GET STARTED</a>
     </nav>
   </header>
 
@@ -150,6 +365,98 @@
       <div class="step">2. Trusted lenders review and may send you an offer</div>
       <div class="step">3. Accept the offer and receive your funds</div>
     </div>
+  </section>
+
+  <section class="loan-types">
+    <h3>Our Loan Types</h3>
+    <div class="loan-cards">
+      <div class="loan-card personal">
+        <h4>Personal Loans</h4>
+        <p>Flexible loans for your personal needs with competitive rates and easy repayment options.</p>
+      </div>
+      <div class="loan-card business">
+        <h4>Business Loans</h4>
+        <p>Support your business growth with our tailored financing solutions.</p>
+      </div>
+      <div class="loan-card emergency">
+        <h4>Emergency Loans</h4>
+        <p>Quick access to funds when you need them most, with fast approval process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefits-container">
+      <div class="benefits-list">
+        <h3>Why Choose ThrustLoans?</h3>
+        <ul>
+          <li>
+            <div>
+              <h4>Fast Approval</h4>
+              <p>Get your loan approved within minutes, not days. Our streamlined process ensures quick access to funds when you need them.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Competitive Rates</h4>
+              <p>Enjoy some of the most competitive interest rates in the market, helping you save money on your loan.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Flexible Terms</h4>
+              <p>Choose repayment terms that work for you, with options to adjust your schedule as needed.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Secure Process</h4>
+              <p>Your data is protected with bank-level security measures, ensuring your information stays safe.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="benefits-button">
+        <a href="form.html" class="cta-button">GET STARTED</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <h3>What Our Customers Say</h3>
+    <div class="feedback-cards">
+      <div class="feedback-card">
+        <p>"ThrustLoans made getting a loan so simple! The process was quick and the customer service was excellent."</p>
+        <div class="author">- Sarah M.</div>
+      </div>
+      <div class="feedback-card">
+        <p>"I needed funds quickly for an emergency, and ThrustLoans came through for me. Highly recommend!"</p>
+        <div class="author">- John D.</div>
+      </div>
+      <div class="feedback-card">
+        <p>"The best loan service I've used. Transparent terms and fast approval process."</p>
+        <div class="author">- Emily R.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <h3>Our Trusted Partners</h3>
+    <div class="partner-cards">
+      <div class="partner-card banks">
+        <h4>Major Banks</h4>
+        <p>Partnered with leading financial institutions to provide you with the best rates.</p>
+      </div>
+      <div class="partner-card unions">
+        <h4>Credit Unions</h4>
+        <p>Working with local credit unions to offer community-focused lending solutions.</p>
+      </div>
+      <div class="partner-card advisors">
+        <h4>Financial Advisors</h4>
+        <p>Collaborating with certified financial experts to ensure your financial well-being.</p>
+      </div>
+    </div>
+    <a href="form.html" class="cta-button">GET LOAN NOW</a>
   </section>
 
   <footer>
